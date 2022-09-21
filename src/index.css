@@ -1,0 +1,24 @@
+@import url('./styles/fonts.css');
+@import url('./styles/theme.css');
+body {
+	font-family: 'League Spartan', sans-serif;
+	font-weight: 500;
+	background-color: var(--light-grayish-cyan);
+	margin: 0;
+}
+
+.body_bg {
+	background-image: url('../public/bg-header-desktop.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 140px;
+	width: 100%;
+	background-color: var(--dark-cyan);
+	margin-bottom: 2em;
+}
+
+@media screen and (max-width: 520) {
+	.body_bg {
+		background-image: url('../public/bg-header-mobile.svg');
+	}
+}

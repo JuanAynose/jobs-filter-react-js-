@@ -1,0 +1,47 @@
+.filter__jobs {
+	display: flex;
+	align-items: center;
+	position: relative;
+	justify-content: space-between;
+	padding: 1em;
+	z-index: 5;
+	font-weight: 500;
+	font-family: 'League Spartan', sans-serif;
+	box-shadow: 5px 0px 20px var(--dark-cyan);
+	border-radius: 0.3em;
+	background-color: #fff;
+}
+
+.wrapper_tags {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.button_clear {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: 'League Spartan', sans-serif;
+	border-bottom: 1px solid var(--dark-cyan);
+	transition: ease-in 0.2s border-bottom;
+	font-size: 1rem;
+	font-weight: 500;
+	color: var(--dark-cyan);
+}
+
+.button_clear:hover {
+	border-bottom: 2px solid var(--dark-cyan);
+	transition: ease-in 0.1s border-bottom;
+}
+
+@media screen and (max-width: 520px) {
+	.filter__jobs {
+		margin: 1em 1em;
+	}
+
+	.wrapper_tags {
+		justify-content: flex-start;
+	}
+}

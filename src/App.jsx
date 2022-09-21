@@ -1,5 +1,6 @@
-import SearchVar from './components/SearchVar';
+import JobsList from './components/JobsList';
+import JOBSINFO from './json/data';
 
-const App = () => <SearchVar name='ola' />;
+const App = () => <JobsList jobsListData={JOBSINFO} />;
 
 export default App;
